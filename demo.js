@@ -25,8 +25,13 @@ function checkForRelatedApps() {
 
     console.log(navigator.userAgent);
 
-    // window.location.href =
-    //   "https://play.google.com/store/apps/details?id=au.com.medinet.mypractice";
+    if (navigator.userAgent.includes("Android")) {
+      console.log("Android");
+      window.location.href =
+        "https://play.google.com/store/apps/details?id=au.com.medinet.mypractice";
+    }
+
+    console.log(123456);
 
     console.log(
       "🚀 ~ file: demo.js ~ line 15 ~ navigator.getInstalledRelatedApps ~ relatedApps",
