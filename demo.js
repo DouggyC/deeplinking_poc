@@ -32,7 +32,7 @@ function checkForRelatedApps() {
     } else if (navigator.userAgent.includes("iPhone")) {
       console.log("iOS");
       window.location.href =
-        "https://https://apps.apple.com/au/app/mypractice/id1542728412";
+        "https://apps.apple.com/au/app/mypractice/id1542728412";
     }
 
     console.log(
