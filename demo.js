@@ -31,10 +31,7 @@ function checkForRelatedApps() {
         "https://play.google.com/store/apps/details?id=au.com.medinet.mypractice";
     } else if (window.navigator.userAgent.includes("iPhone")) {
       console.log("itsios");
-      window.open(
-        "https://apps.apple.com/au/app/mypractice/id1542728412",
-        "_blank"
-      );
+      window.location.href = "apps.apple.com/au/app/mypractice/id1542728412";
 
       // location.href = "https://apps.apple.com/au/app/mypractice/id1542728412";
     }
