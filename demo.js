@@ -29,9 +29,14 @@ function checkForRelatedApps() {
       console.log("Android");
       window.location.href =
         "https://play.google.com/store/apps/details?id=au.com.medinet.mypractice";
+    } else if (
+      navigator.userAgent.includes("iPad") ||
+      navigator.userAgent.includes("iPhone")
+    ) {
+      console.log("iOS");
+      window.location.href =
+        "https://https://apps.apple.com/au/app/mypractice/id1542728412";
     }
-
-    console.log(123456);
 
     console.log(
       "🚀 ~ file: demo.js ~ line 15 ~ navigator.getInstalledRelatedApps ~ relatedApps",
