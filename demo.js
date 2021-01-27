@@ -23,7 +23,7 @@ function checkForRelatedApps() {
     //   ul.appendChild(li);
     // });
 
-    window.location.replace(
+    window.location.href(
       "https://play.google.com/store/apps/details?id=au.com.medinet.mypractice"
     );
 
