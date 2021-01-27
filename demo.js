@@ -23,9 +23,8 @@ function checkForRelatedApps() {
     //   ul.appendChild(li);
     // });
 
-    window.location.href(
-      "https://play.google.com/store/apps/details?id=au.com.medinet.mypractice"
-    );
+    window.location.href =
+      "https://play.google.com/store/apps/details?id=au.com.medinet.mypractice";
 
     console.log(
       "🚀 ~ file: demo.js ~ line 15 ~ navigator.getInstalledRelatedApps ~ relatedApps",
