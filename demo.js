@@ -31,8 +31,7 @@ function checkForRelatedApps() {
         "https://play.google.com/store/apps/details?id=au.com.medinet.mypractice";
     } else if (navigator.userAgent.includes("iPhone")) {
       console.log("iOS");
-      window.location.href =
-        "https://apps.apple.com/au/app/mypractice/id1542728412";
+      window.location.href = "apps.apple.com/au/app/mypractice/id1542728412";
     }
 
     console.log(
