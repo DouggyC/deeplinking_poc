@@ -12,15 +12,17 @@ window.addEventListener("load", () => {
 
 function checkForRelatedApps() {
   navigator.getInstalledRelatedApps().then(relatedApps => {
-    status.textContent = `resolved (${relatedApps.length})`;
-    relatedApps.forEach(app => {
-      const lines = [];
-      lines.push(`<b>id:</b> <code>${app.id}</code>`);
-      lines.push(`<b>platform:</b> ${app.platform}`);
-      lines.push(`<b>url:</b> <a href="${app.url}">${app.url}</a>`);
-      const li = document.createElement("li");
-      li.innerHTML = lines.join("<br>");
-      ul.appendChild(li);
-    });
+    // status.textContent = `resolved (${relatedApps.length})`;
+    // relatedApps.forEach(app => {
+    //   const lines = [];
+    //   lines.push(`<b>id:</b> <code>${app.id}</code>`);
+    //   lines.push(`<b>platform:</b> ${app.platform}`);
+    //   lines.push(`<b>url:</b> <a href="${app.url}">${app.url}</a>`);
+    //   const li = document.createElement("li");
+    //   li.innerHTML = lines.join("<br>");
+    //   ul.appendChild(li);
+    // });
+
+    console.log("Hello World");
   });
 }
