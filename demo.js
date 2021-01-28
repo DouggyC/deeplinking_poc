@@ -29,7 +29,8 @@ function checkForRelatedApps() {
     console.log("Safari");
     location.href = "https://apps.apple.com/au/app/mypractice/id1542728412";
   } else if (navigator.userAgent.includes("iPhone")) {
-    document.location.href = "apps.apple.com/au/app/mypractice/id1542728412";
+    document.location.href =
+      "https://apps.apple.com/au/app/mypractice/id1542728412";
   } else if (navigator.userAgent.includes("Safari")) {
     console.log("Safari");
     location.href = "https://apps.apple.com/au/app/mypractice/id1542728412";
