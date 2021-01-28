@@ -2,12 +2,7 @@ const status = document.getElementById("status");
 const ul = document.getElementById("installedApps");
 
 window.addEventListener("load", () => {
-  // Check to see if the API is supported.
-  if ("getInstalledRelatedApps" in navigator) {
-    const divNotSupported = document.getElementById("notSupported");
-    divNotSupported.classList.toggle("hidden", true);
-    checkForRelatedApps();
-  }
+  checkForRelatedApps();
 });
 
 function checkForRelatedApps() {
