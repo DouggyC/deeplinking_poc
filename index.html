@@ -1,54 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>MyPractice</title>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="/style.css" />
-    <meta name="theme-color" content="#3f51b5" />
-    <link rel="manifest" href="/manifest.json" />
-    <!-- OT Expires 2020-01-14 -->
-    <link
-      http-equiv="origin-trial"
-      content="At3uhlLvIiUq7b2cW267B1XKvHohHGuxeCqF3FJB/0RaR6BUUC5iOWgfYjkaBwzInT33eAdoSEHpONIpM8h4BQAAAABieyJvcmlnaW4iOiJodHRwczovL2dldC1pbnN0YWxsZWQtYXBwcy5nbGl0Y2gubWU6NDQzIiwiZmVhdHVyZSI6Ikluc3RhbGxlZEFwcCIsImV4cGlyeSI6MTU3OTAyOTYxNn0="
-    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MyPractice App</title>
   </head>
   <body>
-    <h1>getInstalledRelatedApps</h1>
+    <script>
+      window.addEventListener("load", () => {
+        console.log(navigator.userAgent);
 
-    <div class="instructions">
-      <span class="instructionsCount">1</span>
-      <span>
-        Install
-        <a
-          href="https://play.google.com/store/apps/details?id=ca.bigbackpack.getinstalledrelatedapps"
-          >this app</a
-        >
-      </span>
-    </div>
-    <div class="instructions">
-      <span class="instructionsCount">2</span>
-      <span> Come back to this page </span>
-    </div>
-    <p>
-      This demo checks to see if a specific
-      <a
-        href="https://play.google.com/store/apps/details?id=au.com.medinet.mypractice"
-        >demo app</a
-      >
-      is installed from the Google Play Store. Only when it is installed will
-      you see it listed below. Try installing it to see how
-      <code>getInstalledRelatedApps</code>
-      works when the expected app is installed.
-    </p>
-
-    <div>
-      <b>Installed Apps:</b> <span id="status"></span>
-      <ul id="installedApps"></ul>
-    </div>
-
-    <script src="/common.js"></script>
-    <script src="/demo.js"></script>
+        if (navigator.userAgent.includes("Android")) {
+          console.log("Android");
+          window.location.href =
+            "https://play.google.com/store/apps/details?id=au.com.medinet.mypractice";
+        } else if (window.navigator.userAgent.includes("iPhone")) {
+          window.location.href =
+            "https://apps.apple.com/au/app/mypractice/id1542728412";
+        } else if (window.navigator.userAgent.includes("Safari")) {
+          console.log("Safari");
+          window.location.href =
+            "https://apps.apple.com/au/app/mypractice/id1542728412";
+        } else if (navigator.userAgent.includes("iPad")) {
+          document.location.href =
+            "https://apps.apple.com/au/app/mypractice/id1542728412";
+        } else if (navigator.userAgent.includes("Safari")) {
+          console.log("Safari");
+          window.location.href =
+            "https://apps.apple.com/au/app/mypractice/id1542728412";
+        }
+      });
+    </script>
   </body>
 </html>
