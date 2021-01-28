@@ -24,16 +24,19 @@ function checkForRelatedApps() {
     window.location.href =
       "https://play.google.com/store/apps/details?id=au.com.medinet.mypractice";
   } else if (window.navigator.userAgent.includes("iPhone")) {
-    document.location.href = "apps.apple.com/au/app/mypractice/id1542728412";
+    window.location.href =
+      "https://apps.apple.com/au/app/mypractice/id1542728412";
   } else if (window.navigator.userAgent.includes("Safari")) {
     console.log("Safari");
-    location.href = "https://apps.apple.com/au/app/mypractice/id1542728412";
+    window.location.href =
+      "https://apps.apple.com/au/app/mypractice/id1542728412";
   } else if (navigator.userAgent.includes("iPhone")) {
     document.location.href =
       "https://apps.apple.com/au/app/mypractice/id1542728412";
   } else if (navigator.userAgent.includes("Safari")) {
     console.log("Safari");
-    location.href = "https://apps.apple.com/au/app/mypractice/id1542728412";
+    window.location.href =
+      "https://apps.apple.com/au/app/mypractice/id1542728412";
   }
 
   console.log(
