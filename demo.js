@@ -2,40 +2,30 @@ const status = document.getElementById("status");
 const ul = document.getElementById("installedApps");
 
 window.addEventListener("load", () => {
-  checkForRelatedApps();
-});
-
-function checkForRelatedApps() {
-  // status.textContent = `resolved (${relatedApps.length})`;
-  // relatedApps.forEach(app => {
-  //   const lines = [];
-  //   lines.push(`<b>id:</b> <code>${app.id}</code>`);
-  //   lines.push(`<b>platform:</b> ${app.platform}`);
-  //   lines.push(`<b>url:</b> <a href="${app.url}">${app.url}</a>`);
-  //   const li = document.createElement("li");
-  //   li.innerHTML = lines.join("<br>");
-  //   ul.appendChild(li);
-  // });
-
   console.log(navigator.userAgent);
 
   if (navigator.userAgent.includes("Android")) {
     console.log("Android");
     window.location.href =
       "https://play.google.com/store/apps/details?id=au.com.medinet.mypractice";
-  } else if (
-    navigator.userAgent.includes("iPhone") ||
-    navigator.userAgent.includes("iPad")
-  ) {
+  } else if (window.navigator.userAgent.includes("iPhone")) {
     window.location.href =
+      "https://apps.apple.com/au/app/mypractice/id1542728412";
+  } else if (window.navigator.userAgent.includes("Safari")) {
+    console.log("Safari");
+    window.location.href =
+      "https://apps.apple.com/au/app/mypractice/id1542728412";
+  } else if (navigator.userAgent.includes("iPhone")) {
+    document.location.href =
       "https://apps.apple.com/au/app/mypractice/id1542728412";
   } else if (navigator.userAgent.includes("Safari")) {
     console.log("Safari");
     window.location.href =
       "https://apps.apple.com/au/app/mypractice/id1542728412";
   }
+
   console.log(
     "🚀 ~ file: demo.js ~ line 15 ~ navigator.getInstalledRelatedApps ~ relatedApps",
     relatedApps
   );
-}
+});
