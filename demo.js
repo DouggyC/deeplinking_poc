@@ -1,5 +1,5 @@
 window.addEventListener("load", () => {
-  console.log(navigator.userAgent);
+  // console.log(navigator.userAgent);
 
   if (navigator.userAgent.includes("Android")) {
     console.log("Android");
