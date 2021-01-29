@@ -17,7 +17,7 @@ window.addEventListener("load", () => {
   } else if (navigator.userAgent.includes("Safari")) {
     document.location.href =
       "https://apps.apple.com/au/app/mypractice/id1542728412";
-  } else if (navigator.userAgent.includes("Chrome")) {
+  } else if (navigator.userAgent.includes("Firefox")) {
     window.location.href =
       "https://play.google.com/store/apps/details?id=au.com.medinet.mypractice";
   }
